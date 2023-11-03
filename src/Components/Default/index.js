@@ -1,7 +1,7 @@
 const Default = ()=>{
     return <>
     
-    <h1>HellO From Default</h1>
+    <h1>Page Not Found,404</h1>
     </>
 }
 

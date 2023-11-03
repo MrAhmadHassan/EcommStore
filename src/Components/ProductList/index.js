@@ -1,38 +1,25 @@
-import { useEffect, useState } from "react";
-import {Link} from 'react-router-dom';
 import Title from "../Title";
-import { storeProducts } from "../../data";
-
-const ProductList = () => {
-    const [products, setProducts] = useState(storeProducts);
-    
-    const subPart = (text)=>{
-        return text.slice(0,100);
-    }
-    
-
+import Card from "../../Components/Card";
+import Search from "../Filter";
+const ProductList = (props) => {
+  const data = props.data;
+  const handleCart = props.handleCart;
+  const handleFilter = props.handleFilter;
   return (
     <>
       <div className="py-5">
         <div className="container">
-          <Title name="Our" title="Products" />
+          
+          <Title name="echo." title="Products" />
+          <Search handleFilter={handleFilter}/>
           <div className="row">
-            {products.map((product)=>{
-                return <>
-                <div key={product.id} className="card" style={{width: "18rem",margin:"5px"}}>
-                <img src={product.img} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                  <h5 className="card-title">{product.title}</h5>
-                  <p className="card-text">{subPart(product.info)}</p>
-                  <Link href="#" className="btn btn-primary">Add to Cart</Link>
+            {data.map((product) => {
+              return (
+                <div key={product.id} className="col-sm-4">
+                  <Card pro={product} handleCart={handleCart} />
                 </div>
-                
-              </div>
-              {/* <br/> */}
-            </>
-              
+              );
             })}
-
           </div>
         </div>
       </div>

@@ -1,0 +1,52 @@
+.hero{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,18,25,1) 35%, rgba(0,212,255,1) 100%);
+}
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.herocontent{
+    width: 50%;
+    text-align: left;
+}
+.herologo{
+    text-align: left;
+}
+.right{
+    width: 50%;
+    background-image: url(/public/img/product-1-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.herobutton{
+    padding: 10px 20px;
+    border: none;
+    background-color: #02B8DE;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+.herobutton:hover{
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .hero{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        margin-top: 170px;
+    }
+    
+  }
