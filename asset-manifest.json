@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/EcommStore/static/css/main.e415cf91.css",
+    "main.js": "/EcommStore/static/js/main.7bf9e362.js",
+    "static/js/787.45ae4b1e.chunk.js": "/EcommStore/static/js/787.45ae4b1e.chunk.js",
+    "static/media/product-1-removebg-preview.png": "/EcommStore/static/media/product-1-removebg-preview.d94907658407c40bcb78.png",
+    "index.html": "/EcommStore/index.html",
+    "main.e415cf91.css.map": "/EcommStore/static/css/main.e415cf91.css.map",
+    "main.7bf9e362.js.map": "/EcommStore/static/js/main.7bf9e362.js.map",
+    "787.45ae4b1e.chunk.js.map": "/EcommStore/static/js/787.45ae4b1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e415cf91.css",
+    "static/js/main.7bf9e362.js"
+  ]
+}
