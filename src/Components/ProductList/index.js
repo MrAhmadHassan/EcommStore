@@ -8,10 +8,11 @@ const ProductList = (props) => {
   return (
     <>
       <div className="py-5">
+      
         <div className="container">
+        <Search handleFilter={handleFilter} />
+          <Title name="" title="Products" />
           
-          <Title name="echo." title="Products" />
-          <Search handleFilter={handleFilter}/>
           <div className="row">
             {data.map((product) => {
               return (

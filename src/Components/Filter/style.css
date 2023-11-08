@@ -1,6 +1,18 @@
-.mycontainer{
+.mycontainer {
     padding: 10px;
     width: 220px;
     display: inline-block;
     background-color: red;
 }
+
+.search-outline {
+    margin: auto;
+    width: 50%;
+    padding: 10px; 
+}
+
+@media only screen and (max-width: 600px) {
+    .search-outline {
+        width: 100%;
+    }
+  }

@@ -1,7 +1,8 @@
-const Default = ()=>{
+import './style.css';
+
+const Default = () => {
     return <>
-    
-    <h1>Page Not Found,404</h1>
+        <h1 className='pagenotfound'>Page Not Found,404</h1>
     </>
 }
 

@@ -6,7 +6,7 @@ function Hero() {
       <div className="hero">
         <div className="left">
           <div className="herocontent">
-            <h2 className="herologo" style={{ color: "white" }}>AHMI CO. 😎</h2>
+            <h2 className="herologo" style={{ color: "white" }}>AHMI CO.</h2>
             <p style={{ color: "white",marginBottom:"25px" }}>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
               fuga corporis sint magnam unde labore, eaque rem debitis nihil,

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./style.css";
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,7 +28,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/cart">
-                  Cart
+                  Cart {props.cartItemsCount==0?"":<span className="countback">{props.cartItemsCount}</span>}
                 </Link>
               </li>
             </ul>

@@ -5,7 +5,7 @@ const Search = (props)=>{
         handleFilter(e.target.value);
     }
     return <>
-    <div>
+    <div className='search-outline'>
         <input type="text" placeholder="Search your product here" name="searchinput" id="searchinput" className="form-control" onChange={(e)=>handleChange(e)}/>
     </div>
     </>

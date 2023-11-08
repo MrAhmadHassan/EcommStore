@@ -22,7 +22,7 @@ const Cart = (props) => {
   }
   return (<>
     <div className="cart-container container mt-3 mb-5">
-      <h2>EcommStore Cart</h2>
+      <h2>Cart items</h2>
       <div className="cart-items">
         {cartItems.map((item) => {
           return <div key={item.id} className="cart-item">
@@ -36,11 +36,11 @@ const Cart = (props) => {
             <h1 className="product-price">${item.price}</h1>
             <h3 className="product-name">{item.title}</h3>
             
-            {/* <div className="quantity">
+            <div className="quantity">
               <button className="quantity-btn minus">-</button>
               <input className="quantity-input" type="number"  min="1" />
               <button className="quantity-btn plus">+</button>
-            </div> */}
+            </div>
             <button className="remove-btn" onClick={()=>handleDelete(item)}>Remove</button>
           </div>
         </div>;
